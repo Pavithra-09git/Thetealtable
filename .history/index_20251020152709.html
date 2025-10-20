@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restuarent Booking</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header style="position: absolute; width: 100%; z-index: 10;">
+
+  <div class="top-bar py-2" style="background-color: transparent; color: #FFFFFF;">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <i class="fa fa-phone"></i> +1 5589 55488 55
+        <span class="ms-3"><i class="fa fa-clock"></i> Mon-Sat: 11:00 AM - 23:00 PM</span>
+      </div>
+      <div>
+        <button type="button" class="btn" 
+                style="background-color: #E9C46A; color: #264653; font-weight: bold;">
+          Book Now
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+<nav class="navbar navbar-expand-lg" style="background-color:transparent">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">The Teal Table</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color: #FFFFFF;"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white active" href="#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#specials">Specials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#events">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#chefs">Chefs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+</header>
+
+ <section id="hero" class="hero section">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+    <!-- Carousel indicators -->
+    <ol class="carousel-indicators">
+      <li data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#heroCarousel" data-bs-slide-to="1"></li>
+         <li data-bs-target="#heroCarousel" data-bs-slide-to="2"></li>
+            <li data-bs-target="#heroCarousel" data-bs-slide-to="3"></li>
+               
+    </ol>
+
+    <!-- Carousel inner -->
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="./images/img 1.jpg" class="d-block w-100" alt="Delicious Restaurant" style="height:100vh; object-fit:cover; filter:brightness(70%);">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <h2 class="text-white"><span style="color:#2A9D8F;">The Teal </span> Restaurant</h2>
+          <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          <div>
+            <a href="#menu" class="btn btn-warning text-dark mx-2">Our Menu</a>
+            <a href="#book-a-table" class="btn btn-warning text-dark mx-2">Book a table</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./images/img7.avif" class="d-block w-100" alt="Delicious Restaurant" style="height:100vh; object-fit:cover; filter:brightness(60%);">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <h2 class="text-white"><span style="color:#2A9D8F;">The Teal </span> Restaurant</h2>
+          <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          <div>
+            <a href="#menu" class="btn btn-warning text-dark mx-2">Our Menu</a>
+            <a href="#book-a-table" class="btn btn-warning text-dark mx-2">Book a table</a>
+          </div>
+        </div>
+      </div>
+       <div class="carousel-item">
+        <img src="./images/img 10.avif" class="d-block w-100" alt="Delicious Restaurant" style="height:100vh; object-fit:cover; filter:brightness(60%);">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <h2 class="text-white"><span style="color:#2A9D8F;">The Teal </span> Restaurant</h2>
+          <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          <div>
+            <a href="#menu" class="btn btn-warning text-dark mx-2">Our Menu</a>
+            <a href="#book-a-table" class="btn btn-warning text-dark mx-2">Book a table</a>
+          </div>
+        </div>
+      </div>
+       <div class="carousel-item">
+        <img src="./images/img11.jpg" class="d-block w-100" alt="Delicious Restaurant" style="height:100vh; object-fit:cover; filter:brightness(60%);">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <h2 class="text-white"><span style="color:#2A9D8F;">The Teal </span> Restaurant</h2>
+          <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          <div>
+            <a href="#menu" class="btn btn-warning text-dark mx-2">Our Menu</a>
+            <a href="#book-a-table" class="btn btn-warning text-dark mx-2">Book a table</a>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+
+    <!-- Carousel controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+</section>
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+    <!-- Section Heading -->
+    <div class="text-center mb-5">
+      <h2 class="display-4 fw-bold " style="color: #264653;">About Us</h2>
+      <p class="lead text-muted mx-auto" style="max-width:700px;">
+        At <strong>The Teal Table</strong>, we serve more than food — we create unforgettable dining experiences. 
+        Fresh ingredients, bold flavors, and a cozy ambiance await every guest.
+      </p>
+    </div>
+
+    <!-- About Content -->
+    <div class="row align-items-center g-4">
+      <!-- Image -->
+    <div class="col-md-6 d-flex justify-content-center">
+  <div class="overflow-hidden rounded shadow-lg w-75">
+    <img src="./images/pexels-reneterp-1581384.jpg" class="img-fluid hover-scale" alt="Restaurant Image">
+  </div>
+</div>
+
+
+      <!-- Text Content -->
+      <div class="col-md-6">
+        <h3 class=" fw-bold mb-3" style="color: #264653;">Who We Are</h3>
+        <p class="text-muted">
+          Founded in 2020, <strong>The Teal Table</strong> brings together chefs and food lovers to craft dishes 
+          that leave a lasting impression. Quality, flavor, and a welcoming dining experience are at the heart of everything we do.
+        </p>
+
+        <h3 class=" fw-bold mb-3" style="color: #264653;">What We Offer</h3>
+        <ul class="list-unstyled text-muted mb-4">
+          <li class="mb-2"> Fresh, locally sourced ingredients in every dish</li>
+          <li class="mb-2">Warm and cozy ambiance perfect for gatherings</li>
+          <li class="mb-2">Seasonal specialties and chef’s curated menus</li>
+          <li class="mb-2">Easy online ordering and home delivery</li>
+        </ul>
+
+        <a href="#menu" class="btn  btn-lg shadow-sm" style="background-color: #264653; color: #FFFFFF;">Explore Our Menu</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--  menuu -->
+<section id="menu" class="py-5 ">
+  <div class="container">
+    <!-- Section Heading -->
+    <div class="text-center mb-5">
+      <h2 class="display-4 fw-bold" style="color: #264653;">Our Menu</h2>
+      <p class="lead text-muted mx-auto" style="max-width:700px;">
+        Explore our delicious offerings crafted with fresh ingredients and lots of love.
+      </p>
+    </div>
+
+    <!-- Menu Items -->
+    <div class="row g-4">
+      <!-- Menu Item 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://images.pexels.com/photos/2619970/pexels-photo-2619970.jpeg" class="card-img-top roundedver-scale" alt="Pasta">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold"  style="color: #264653;">Creamy Alfredo Pasta</h5>
+            <p class="card-text text-muted">Rich, creamy pasta with parmesan and fresh herbs.</p>
+            <span class="fw-bold "style="color:#2A9D8F;">₹299</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Item 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://images.pexels.com/photos/10701947/pexels-photo-10701947.jpeg" class="card-img-top hover-scale" alt="Burger">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold"  style="color: #264653;">Classic Cheeseburger</h5>
+            <p class="card-text text-muted">Juicy beef patty, cheddar cheese, and fresh veggies.</p>
+            <span class="fw-bold "  style="color:#2A9D8F;">229</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Item 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://images.pexels.com/photos/1059905/pexels-photo-1059905.jpeg" class="card-img-top hover-scale" alt="Salad">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold"  style="color: #264653;">Fresh Garden Salad</h5>
+            <p class="card-text text-muted">Crisp greens with seasonal vegetables and vinaigrette.</p>
+            <span class="fw-bold "  style="color:#2A9D8F;">₹170</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Item 4 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://images.pexels.com/photos/842142/pexels-photo-842142.jpeg" class="card-img-top hover-scale" alt="Pizza">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold"  style="color: #264653;">Grilled Salmon with Lemon Butter Sauce</h5>
+            <p class="card-text text-muted">Perfectly grilled salmon served with creamy lemon butter sauce and sautéed vegetables.</p>
+            <span class="fw-bold "style="color:#2A9D8F;">₹430</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Item 5 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://images.pexels.com/photos/3493579/pexels-photo-3493579.jpeg" class="card-img-top hover-scale" alt="Soup">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold"  style="color: #264653;">Tomato Basil Soup</h5>
+            <p class="card-text text-muted">Smooth tomato soup with fresh basil and cream.</p>
+            <span class="fw-bold"  style="color:#2A9D8F;">₹109</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Item 6 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://images.pexels.com/photos/8951172/pexels-photo-8951172.jpeg" class="card-img-top hover-scale" alt="Sushi">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold"  style="color: #264653;">Salmon Sushi Roll</h5>
+            <p class="card-text text-muted">Fresh salmon wrapped in rice and seaweed.</p>
+            <span class="fw-bold" style="color:#2A9D8F;">₹299</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Item 7 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://images.pexels.com/photos/27643033/pexels-photo-27643033.jpeg" class="card-img-top hover-scale" alt="Steak">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold"  style="color: #264653;">Grilled Ribeye Steak</h5>
+            <p class="card-text text-muted">Tender steak grilled to perfection with garlic butter.</p>
+            <span class="fw-bold "  style="color:#2A9D8F;">₹350/span>
+          </div>
+        </div>
+      </div>
+
+
+     
+
+      <!-- Menu Item 8 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://images.pexels.com/photos/33674412/pexels-photo-33674412.jpeg" class="card-img-top hover-scale" alt="Dessert">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold"  style="color: #264653;">Chocolate Lava Cake</h5>
+            <p class="card-text text-muted">Warm chocolate cake with a molten center.</p>
+            <span class="fw-bold " style="color:#2A9D8F;">₹260</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Item 9 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://images.pexels.com/photos/11842142/pexels-photo-11842142.jpeg" class="card-img-top hover-scale" alt="Pancakes">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold"  style="color: #264653;">Blueberry Pancakes</h5>
+            <p class="card-text text-muted">Fluffy pancakes topped with fresh blueberries and syrup.</p>
+            <span class="fw-bold" style="color:#2A9D8F;">₹199</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Item 10 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://images.pexels.com/photos/26063521/pexels-photo-26063521.jpeg" class="card-img-top hover-scale" alt="Ice Cream">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold"  style="color: #264653;">Vanilla Ice Cream</h5>
+            <p class="card-text text-muted">Classic vanilla ice cream served in a cup or cone.</p>
+            <span class="fw-bold" style="color:#2A9D8F;">₹199</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- special -->
+ <section id="special-food" class="py-5 ">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Our Special Dishes</h2>
+      <p class="text-muted">Chef's special picks for you!</p>
+    </div>
+
+    <div class="row g-4 align-items-center">
+
+      <!-- Item 1: Grilled Salmon -->
+      <div class="col-md-6 d-flex align-items-center">
+        <img src="https://images.pexels.com/photos/27643033/pexels-photo-27643033.jpeg" class="img-fluid rounded me-3 special-img hover-scale" alt="Grilled Salmon" style="width: 120px; height: 120px; object-fit: cover;">
+        <div>
+          <h5 class="mb-1">Grilled Salmon with Lemon Butter</h5>
+          <p class="mb-1 text-muted">Tender salmon grilled to perfection with zesty lemon butter sauce.</p>
+          <span class="fw-bold text-success">₹750</span>
+        </div>
+      </div>
+
+      <!-- Item 2: Paneer Butter Masala -->
+      <div class="col-md-6 d-flex align-items-center">
+        <img src="https://images.pexels.com/photos/9609838/pexels-photo-9609838.jpeg" class="img-fluid rounded me-3 special-img hover-scale" alt="Paneer Butter Masala" style="width: 120px; height: 120px; object-fit: cover;">
+        <div>
+          <h5 class="mb-1">Paneer Butter Masala</h5>
+          <p class="mb-1 text-muted">Soft paneer cubes in creamy tomato butter gravy. Served with naan or rice.</p>
+          <span class="fw-bold text-success">₹350</span>
+        </div>
+      </div>
+
+      <!-- Item 3: Hyderabadi Chicken Biryani -->
+      <div class="col-md-6 d-flex align-items-center">
+        <img src="https://images.pexels.com/photos/16020573/pexels-photo-16020573.jpeg" class="img-fluid rounded me-3 special-img hover-scale" alt="Chicken Biryani" style="width: 120px; height: 120px; object-fit: cover;">
+        <div>
+          <h5 class="mb-1">Hyderabadi Chicken Biryani</h5>
+          <p class="mb-1 text-muted">Aromatic basmati rice layered with tender chicken and rich spices.</p>
+          <span class="fw-bold text-success">₹550</span>
+        </div>
+      </div>
+
+      <!-- Item 4: Masala Dosa -->
+      <div class="col-md-6 d-flex align-items-center">
+        <img src="https://images.pexels.com/photos/12392915/pexels-photo-12392915.jpeg" class="img-fluid rounded me-3 special-img hover-scale" alt="Masala Dosa" style="width: 120px; height: 120px; object-fit: cover;">
+        <div>
+          <h5 class="mb-1">Masala Dosa</h5>
+          <p class="mb-1 text-muted">Crispy rice crepe filled with spiced potato masala, served with chutney and sambar.</p>
+          <span class="fw-bold text-success">₹180</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- event  -->
+<section id="events" class="events position-relative py-5" >
+        <div class="position-absolute top-0 start-0 w-100 h-100" 
+       style="background: url('https://images.pexels.com/photos/7149165/pexels-photo-7149165.jpeg') center/cover no-repeat; 
+              filter: blur(5px); 
+              z-index: -1;">
+  </div>
+  <div class="container  position-relative text-white">
+
+
+    <div id="eventsCarousel" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Carousel indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#eventsCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#eventsCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#eventsCarousel" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <img src="https://images.pexels.com/photos/32333373/pexels-photo-32333373.jpeg" class="img-fluid rounded" alt="Birthday Parties">
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0 text-white">
+              <h3>Birthday Parties</h3>
+              <h5 class="text-warning">1999</h5>
+              <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check2-circle text-warning me-2"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li><i class="bi bi-check2-circle text-warning me-2"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                <li><i class="bi bi-check2-circle text-warning me-2"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              </ul>
+              <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <img src="https://images.pexels.com/photos/3937549/pexels-photo-3937549.jpeg" class="img-fluid rounded" alt="Private Parties">
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0 text-white">
+              <h3>Private Parties</h3>
+              <h5 class="text-warning">2290</h5>
+              <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check2-circle text-warning me-2"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li><i class="bi bi-check2-circle text-warning me-2"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                <li><i class="bi bi-check2-circle text-warning me-2"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              </ul>
+              <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <img src="https://images.pexels.com/photos/19035035/pexels-photo-19035035.jpeg" class="img-fluid rounded" alt="Custom Parties">
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0 text-white">
+              <h3>Custom Parties</h3>
+              <h5 class="text-warning">2000</h5>
+              <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check2-circle text-warning me-2"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li><i class="bi bi-check2-circle text-warning me-2"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                <li><i class="bi bi-check2-circle text-warning me-2"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              </ul>
+              <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#eventsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#eventsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- chef
+  -->
+<!-- Chefs Section -->
+<section id="chefs" class="chefs py-5 bg-light position-relative">
+  <div class="container">
+    <!-- Section Title -->
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="fw-bold">Meet Our Master Chefs</h2>
+      <p class="text-muted">Talented chefs bringing passion and flavor to every dish</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Chef 1 -->
+      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="card border-0 shadow-sm text-center chef-card position-relative overflow-hidden">
+          <img src="https://images.pexels.com/photos/3814446/pexels-photo-3814446.jpeg" class="card-img-top rounded-circle p-3 chef-img" alt="Chef John Doe">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">John Doe</h5>
+            <p class="text-muted">Head Chef</p>
+          </div>
+          <!-- Animated Social Overlay -->
+          <div class="social-overlay d-flex justify-content-center align-items-center gap-3 position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50">
+            <a href="#" class="text-white fs-5"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chef 2 -->
+      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="card border-0 shadow-sm text-center chef-card position-relative overflow-hidden">
+          <img src="https://images.pexels.com/photos/8879388/pexels-photo-8879388.jpeg" class="card-img-top rounded-circle p-3 chef-img" alt="Chef Jane Smith">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Jane Smith</h5>
+            <p class="text-muted">Pastry Chef</p>
+          </div>
+          <div class="social-overlay d-flex justify-content-center align-items-center gap-3 position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50">
+            <a href="#" class="text-white fs-5"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chef 3 -->
+      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="card border-0 shadow-sm text-center chef-card position-relative overflow-hidden">
+          <img src="https://images.pexels.com/photos/6605421/pexels-photo-6605421.jpeg" class="card-img-top rounded-circle p-3 chef-img" alt="Chef Michael Lee">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Michael Lee</h5>
+            <p class="text-muted">Sous Chef</p>
+          </div>
+          <div class="social-overlay d-flex justify-content-center align-items-center gap-3 position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50">
+            <a href="#" class="text-white fs-5"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chef 4 -->
+      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="card border-0 shadow-sm text-center chef-card position-relative overflow-hidden">
+          <img src="https://images.pexels.com/photos/7175968/pexels-photo-7175968.jpeg" class="card-img-top rounded-circle p-3 chef-img" alt="Chef Sarah Kim">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Sarah Kim</h5>
+            <p class="text-muted">Grill Chef</p>
+          </div>
+          <div class="social-overlay d-flex justify-content-center align-items-center gap-3 position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50">
+            <a href="#" class="text-white fs-5"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- gallery -->
+<!-- Gallery Section -->
+<section id="gallery" class="gallery py-5 bg-light">
+  <div class="container">
+    <!-- Section Title -->
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="fw-bold">Our Gallery</h2>
+      <p class="text-muted">A glimpse of our restaurant, dishes, and ambiance</p>
+    </div>
+
+    <div class="row g-3">
+
+      <!-- Gallery Item 1 -->
+      <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="gallery-item overflow-hidden rounded">
+          <img src="https://images.pexels.com/photos/16230542/pexels-photo-16230542.jpeg" class="img-fluid gallery-img" alt="Restaurant Interior">
+        </div>
+      </div>
+
+      <!-- Gallery Item 2 -->
+      <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+        <div class="gallery-item overflow-hidden rounded">
+          <img src="https://images.pexels.com/photos/6327141/pexels-photo-6327141.jpeg" class="img-fluid gallery-img" alt="Dish 1">
+        </div>
+      </div>
+
+      <!-- Gallery Item 3 -->
+      <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
+        <div class="gallery-item overflow-hidden rounded">
+          <img src="https://images.pexels.com/photos/6127316/pexels-photo-6127316.jpeg" class="img-fluid gallery-img" alt="Restaurant Exterior">
+        </div>
+      </div>
+
+      <!-- Gallery Item 4 -->
+      <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="400">
+        <div class="gallery-item overflow-hidden rounded">
+          <img src="https://images.pexels.com/photos/5531168/pexels-photo-5531168.jpeg" class="img-fluid gallery-img" alt="Dish 2">
+        </div>
+      </div>
+
+      <!-- Gallery Item 5 -->
+      <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="500">
+        <div class="gallery-item overflow-hidden rounded">
+          <img src="https://images.pexels.com/photos/34363593/pexels-photo-34363593.jpeg" class="img-fluid gallery-img" alt="Restaurant Bar">
+        </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="500">
+        <div class="gallery-item overflow-hidden rounded">
+          <img src="https://images.pexels.com/photos/32757002/pexels-photo-32757002.jpeg" class="img-fluid gallery-img" alt="Restaurant Bar">
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="500">
+        <div class="gallery-item overflow-hidden rounded">
+          <img src="https://images.pexels.com/photos/32288053/pexels-photo-32288053.jpeg" class="img-fluid gallery-img" alt="Restaurant Bar">
+        </div>
+      </div>
+
+      <!-- Gallery Item 6 -->
+      <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="600">
+        <div class="gallery-item overflow-hidden rounded">
+          <img src="https://images.pexels.com/photos/31774132/pexels-photo-31774132.jpeg" class="img-fluid gallery-img" alt="Restaurant Event">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- book table -->
+
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Image -->
+      <div class="col-md-6 text-center">
+        <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg" 
+             class="img-fluid rounded shadow-lg" 
+             alt="Delicious Food">
+      </div>
+
+      <!-- Right Form -->
+      <div class="col-md-6">
+        <form class="p-4 bg-light rounded shadow">
+          <h3 class="mb-4">Book Your Table 🍽️</h3>
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" placeholder="Enter your name">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Date</label>
+            <input type="date" class="form-control">
+          </div>
+           <div class="mb-3">
+            <label class="form-label">People</label>
+            <input type="number" placeholder="num of peoples" class="form-control">
+          </div class="text">
+          <button type="submit" class=" w-50 " style="background-color: #264653; color: #FFFFFF;">Book Now</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+<!-- Ah! I see exactly what’s happening. The reason your blur effect isn’t working is because of how backdrop-filter and filter work in CSS:
+
+backdrop-filter only blurs elements behind a semi-transparent overlay, not the element’s own background image.
+
+filter: blur() works, but you applied it to a div that is on top of your section, while the parent section already has the same background. This causes the blur to not be visible, because the overlay is fully opaque with the same image. -->
